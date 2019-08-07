@@ -1,5 +1,5 @@
 <template>
-    <canvas id="myChart" width="400" height="400" ref="myChart"></canvas>
+    <canvas id="myChart" :width="width" :height="width" ref="myChart"></canvas>
 </template>
 
 <script>
@@ -7,6 +7,19 @@ import Chart from 'chart.js';
 
 export default {
     props: {
+        name: {
+            type: String,
+            required: true,
+            description: 'A unique name, and it will be used for the elements id',
+        },
+        width: {
+            type: String,
+            default: "400",
+        },
+        height: {
+            type: String,
+            default: "400",
+        },
         chartType: {
             type: String,
             default: 'bar',

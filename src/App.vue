@@ -3,17 +3,17 @@
     <h2>Graphs</h2>
 
     <h3>Bar chart</h3>
-    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" />
+    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" name="bar_graph" />
     <h3>Line chart</h3>
-    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" chartType="line" />
+    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" name="line_graph" chartType="line" />
     <h3>Radar chart</h3>
-    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" chartType="radar" />
+    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" name="radar_graph" chartType="radar" />
     <h3>Polar chart</h3>
-    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" chartType="polarArea" />
+    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" name="polar_graph" chartType="polarArea" />
     <h3>Bubble chart</h3>
-    <BasicChart :labels="BubbleGraphData.labels" :datasets="BubbleGraphData.datasets" chartType="bubble" />
+    <BasicChart :labels="BubbleGraphData.labels" :datasets="BubbleGraphData.datasets" name="bubble_graph" chartType="bubble" />
     <h3>Scatter chart</h3>
-    <BasicChart :labels="ScatterGraphData.labels" :datasets="ScatterGraphData.datasets" chartType="scatter" />
+    <BasicChart :labels="ScatterGraphData.labels" :datasets="ScatterGraphData.datasets" name="scatter_graph" chartType="scatter" />
 
   </div>
 </template>
