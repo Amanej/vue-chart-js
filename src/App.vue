@@ -1,9 +1,13 @@
 <template>
   <div id="app">
     <h2>Graphs</h2>
+    <h3>Bar chart</h3>
+    <JSChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" name="bar_graph" />
 
     <h3>Bar chart</h3>
-    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" name="bar_graph" />
+    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" name="bar_graph_ts" />
+
+    <!--
     <h3>Line chart</h3>
     <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" name="line_graph" chartType="line" />
     <h3>Radar chart</h3>
@@ -14,13 +18,15 @@
     <BasicChart :labels="BubbleGraphData.labels" :datasets="BubbleGraphData.datasets" name="bubble_graph" chartType="bubble" />
     <h3>Scatter chart</h3>
     <BasicChart :labels="ScatterGraphData.labels" :datasets="ScatterGraphData.datasets" name="scatter_graph" chartType="scatter" />
+    -->
 
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import BasicChart from './components/basicChart/basicChart.vue';
+import BasicChart from './components/Chart/Base';
+import JSChart from './components/JSChart/Base.vue';
 import {GrafData} from './types/graph';
 // import grafData from './assets/grafData.json'
 
@@ -113,6 +119,7 @@ const grafData: GrafData[] = [
 @Component({
   components: {
     BasicChart,
+    JSChart,
   },
 })
 export default class App extends Vue {
@@ -122,7 +129,7 @@ export default class App extends Vue {
 
   public ScatterGraphData: any = grafData[2].data;
 
-  public val: number = 0
+  public val: number = 0;
 
 }
 </script>
