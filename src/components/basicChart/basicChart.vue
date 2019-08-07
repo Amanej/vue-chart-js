@@ -61,13 +61,5 @@ export default {
     mounted() {
         this.renderChart()
     },
-    watch: {
-        datasets: function(oldValue, newValue) {
-            console.log('Dataset changed')
-        },
-        test: function() {
-            console.log('test changed')
-        }
-    },
 };
 </script>
