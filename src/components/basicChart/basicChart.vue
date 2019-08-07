@@ -1,5 +1,5 @@
 <template>
-    <canvas id="myChart" :width="width" :height="width" ref="myChart"></canvas>
+    <canvas :id="name" :width="width" :height="width" :ref="name"></canvas>
 </template>
 
 <script>
@@ -38,7 +38,7 @@ export default {
     },
     methods: {
         renderChart() {
-            const myChart = this.$refs.myChart;
+            const myChart = this.$refs[this.name];
             const chart = new Chart(myChart, {
                 type: this.chartType,
                 data: {
