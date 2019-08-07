@@ -2,12 +2,10 @@
   <div id="app">
     <h2>Graphs</h2>
 
-    <input type="number" v-model="val" @change="changeData" />
-
     <h3>Bar chart</h3>
     <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" />
     <h3>Line chart</h3>
-    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" chartType="line" :test="val" />
+    <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" chartType="line" />
     <h3>Radar chart</h3>
     <BasicChart :labels="BarGraphData.labels" :datasets="BarGraphData.datasets" chartType="radar" />
     <!--
@@ -25,8 +23,6 @@
       <li>Bubble</li>
       <li>Scatter</li>
     </ul>
-
-    <button @click="changeData">Change data</button>
 
   </div>
 </template>
@@ -78,12 +74,6 @@ export default class App extends Vue {
 
   public val: number = 0
 
-  public changeData() {
-    // this.BarGraphData[0].data[0].data[2] = this.val
-    // this.BarGraphData.datasets.data[2] = 20
-    this.BarGraphData.datasets[0].data[2] = this.val
-    console.log(this.BarGraphData.datasets[0].data[2])
-  }
 }
 </script>
 
