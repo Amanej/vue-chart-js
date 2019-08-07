@@ -12,9 +12,9 @@ interface BubbleGrafData {
 export interface GrafDataSet {
     label: string;
     data: number[] | BubbleGrafData[] | ScatterGrafData[];
-    backgroundColor: string[];
-    borderColor: string[];
-    borderWidth: number;
+    backgroundColor?: string[];
+    borderColor?: string[];
+    borderWidth?: number;
 }
 
 export interface GrafDataObj {
