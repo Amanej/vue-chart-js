@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import BasicChart from './components/basicChart/basicChart.vue';
+import BasicChart from './components/BasicChart/BasicChart.vue';
 import {GrafData} from './types/graph';
 // import grafData from './assets/grafData.json'
 
