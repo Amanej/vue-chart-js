@@ -1,6 +1,6 @@
 import Chart from 'chart.js';
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import { GrafDataSet } from './../../types/graph';
+import { GrafDataSet } from '../../@types/graph';
 
 @Component
 export default class BaseChart extends Vue {
