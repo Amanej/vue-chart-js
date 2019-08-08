@@ -10,7 +10,7 @@
     "*.json",
     "*.js",
     "*.ts",
-    "types/*.d.ts"
+    "types"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
