@@ -1,6 +1,6 @@
 import Chart from 'chart.js';
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import { GrafDataSet } from '../../@types/graph';
+import { GrafDataSet } from '../../types/graph';
 
 @Component
 export default class BaseChart extends Vue {
@@ -37,10 +37,7 @@ export default class BaseChart extends Vue {
 
     // Methods
     public renderChart() {
-        // @ts-ignore
-        const chartElement: HTMLElement = this.$refs[this.name]; // document.getElementById(this.name);
-        // @ts-ignore
-        const chart = new Chart(chartElement, {
+        const chart = new Chart(this.name, {
             type: this.chartType,
             data: {
                 labels: this.labels,
