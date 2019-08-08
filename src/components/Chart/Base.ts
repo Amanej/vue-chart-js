@@ -37,7 +37,9 @@ export default class BaseChart extends Vue {
 
     // Methods
     public renderChart() {
-        const chartElement = this.$refs[this.name];
+        // @ts-ignore
+        const chartElement: HTMLElement = this.$refs[this.name]; // document.getElementById(this.name);
+        // @ts-ignore
         const chart = new Chart(chartElement, {
             type: this.chartType,
             data: {

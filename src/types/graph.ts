@@ -1,3 +1,5 @@
+import {Chart} from 'chart.js';
+
 interface ScatterGrafData {
     x: number;
     y: number;
@@ -27,3 +29,12 @@ export interface GrafData {
     type: string;
     data: GrafDataObj;
 }
+
+/*
+export class ChartElement extends Chart {
+    constructor(
+        context: HTMLElement,
+        options: Chart.ChartConfiguration
+    );
+}
+*/

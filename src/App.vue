@@ -23,6 +23,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import BasicChart from './components/Chart/Base';
 import {GrafData} from './types/graph';
 
+
 const grafData: GrafData[] = [
   {
        name: 'bar_1',
@@ -59,7 +60,7 @@ const grafData: GrafData[] = [
       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
       datasets: [{
         label: '# of Votes',
-        data: [{x: 2, y: 3, r:12},{x:1, y: 2, r:8},{x:5, y: 4, r:8},{x:6, y: 3, r:4}],
+        data: [{x: 2, y: 3, r: 12}, {x: 1, y: 2, r: 8}, {x: 5, y: 4, r: 8}, {x: 6, y: 3, r: 4}],
         backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
@@ -90,7 +91,7 @@ const grafData: GrafData[] = [
         data: [
           {x: -10, y: 0 },
           {x: 0, y: 10 },
-          {x: 10, y: 5}
+          {x: 10, y: 5 },
         ],
         backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
