@@ -1,6 +1,6 @@
 {
   "name": "@solutus/vue-chart-js",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "private": false,
   "main": "./dist/vue-chartjs.common.js",
   "typings": "types/index.d.ts",
