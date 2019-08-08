@@ -3,6 +3,7 @@
   "version": "0.4.1",
   "private": false,
   "main": "./dist/vue-chartjs.common.js",
+  "typings": "types/index.d.ts",
   "files": [
     "dist/*",
     "src/*",
