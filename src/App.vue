@@ -21,7 +21,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import BasicChart from './components/Chart/Base';
-import {GrafData} from './types/graph';
+import {GrafData} from './@types/graph';
 
 
 const grafData: GrafData[] = [
